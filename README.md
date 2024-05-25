@@ -1,47 +1,27 @@
-# Astro Starter Kit: Minimal
+# My personal site
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Welcome! Its been _years_ since I've done anything with my primary domain of https://dougneiner.com, or what was supposed to be my coding focused site at http://code.dougneiner.com. So my hope is this repository will soon become my new website.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+For a while, my hobbies centered almost solely around woodworking. You can find that stuff at https://dnhandcrafted.com if you are interested.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Open source and knowledge sharing
 
-## 🚀 Project Structure
+I don't have a formal computer science background, so I'd be most commonly described as a self-taught software engineer. However, that term "self-taught" has never sat well with me. While I _have_ learned a lot on my own, those learnings are continually intertwined and influenced by all the amazing people who have freely shared their knowledge, experiments and musings.
 
-Inside of your Astro project, you'll see the following folders and files:
+In that vein, my current plan is to develop this site in public with the source of the site MIT licensed. I still need to make a decision about the _content_ of the site, so I'll update the README appropriately once I've taken that decision.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+This isn't entirely out of good will – I'm hoping there is a real chance I get some constructive feedback from others that can help make what I am doing even better!
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## About the tech
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+I've used a number of static site generators of the years. I had good luck with [Eleventy](https://www.11ty.dev/) for my hobby woodworking site, but I've heard good things about Astro so I'm giving that a shot.
 
-Any static assets, like images, can be placed in the `public/` directory.
+I have no idea if I'll manage to keep this list up to date, but here goes nothing:
 
-## 🧞 Commands
+- [Astro](https://astro.build/)
 
-All commands are run from the root of the project, from a terminal:
+## About me
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Hey, I'm Doug. I've been coding since our family was given a Commodore 64 and I discovered BASIC when I was a kid. One of my first websites heavily used frames and I wasn't opposed to using FrontPage back then. I've been working in design and development professionally for close to 20 years. Even though I enjoy all aspects of web technology (backends, databases, deployment) my career has focused largely on the front-end and design.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+You can find me on [Twitter/X](https://x.com/dougneiner) or [LinkedIn](https://www.linkedin.com/in/dougneiner/).

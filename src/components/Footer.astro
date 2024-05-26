@@ -1,8 +1,23 @@
 ---
 const year = new Date().getFullYear();
+const skipDisclaimer = Astro.url.pathname.startsWith("/build-in-public");
 ---
 
 <footer>
+  <hr />
+  {
+    !skipDisclaimer && (
+      <p>
+        <strong>Wondering why this website looks so unfinished?</strong> I'm{" "}
+        <a href="/build-in-public">building this site in public</a>! You are
+        welcome to follow along and even make suggestions for tech or solutions
+        I should check out{" "}
+        <a href="https://github.com/dcneiner/dougneiner.com">
+          over on the GitHub repo.
+        </a>
+      </p>
+    )
+  }
   <p>
     Site text and image content © {year} Doug Neiner. All rights reserved.
     <br />

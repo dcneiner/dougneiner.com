@@ -16,7 +16,7 @@ const navLinks = [
       {
         navLinks.map((link) => (
           <li>
-            {link.url === currentUrl ? (
+            {currentUrl.startsWith(link.url) ? (
               <>
                 <span class="sr-only">Current: </span>
                 {link.label}

@@ -1,43 +1,32 @@
 ---
-const currentUrl = Astro.url.pathname.split("/")[1];
-const what = Astro.url.pathname;
+const currentUrl = Astro.url.pathname;
+const navLinks = [
+  { label: "About", url: "/about" },
+  { label: "Speaking", url: "/speaking" },
+];
 ---
 
 <header>
+  <a class="sr-only" href="#main">Skip to main content</a>
+
   <h1><a href="/">Doug Neiner</a></h1>
 
-  <strong>what: {what}</strong>
-  <strong>Current URL: {currentUrl}</strong>
   <nav aria-label="Main">
     <ul>
-      <li>
-        {
-          currentUrl === "about" ? (
-            "Current: About"
-          ) : (
-            <a
-              aria-current={currentUrl === "about" ? "page" : undefined}
-              href="/about"
-            >
-              About
-            </a>
-          )
-        }
-      </li>
-      <li>
-        {
-          currentUrl === "speaking" ? (
-            "Current: Speaking"
-          ) : (
-            <a
-              aria-current={currentUrl === "speaking" ? "page" : undefined}
-              href="/speaking"
-            >
-              Speaking
-            </a>
-          )
-        }
-      </li>
+      {
+        navLinks.map((link) => (
+          <li>
+            {link.url === currentUrl ? (
+              <>
+                <span class="sr-only">Current: </span>
+                {link.label}
+              </>
+            ) : (
+              <a href={link.url}>{link.label}</a>
+            )}
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>

@@ -2,6 +2,8 @@
   "name": "dougneiner.com",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

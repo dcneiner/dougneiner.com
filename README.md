@@ -14,7 +14,7 @@ This isn't entirely out of good will – I'm hoping there is a real chance I get
 
 ## About the tech
 
-I've used a number of static site generators of the years. I had good luck with [Eleventy](https://www.11ty.dev/) for my hobby woodworking site, but I've heard good things about Astro so I'm giving that a shot.
+I've used a number of static site generators over the years, but I've heard good things about [Astro](https://astro.build/) and decided to use it for this project. (I've also had good luck with [Eleventy](https://www.11ty.dev/) for my [hobby woodworking site](https://dnhandcrafted.com/)).
 
 I have no idea if I'll manage to keep this list up to date, but here goes nothing:
 

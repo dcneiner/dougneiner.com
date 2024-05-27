@@ -26,6 +26,6 @@ Of course this isn't entirely out of good will… I'm hoping there is a real cha
 
 ## About the tech
 
-I've used a number of static site generators of the years. I had good luck with [Eleventy](https://www.11ty.dev/) for my [hobby woodworking site](https://dnhandcrafted.com/), but I've heard good things about Astro so I'm giving that a shot.
+I've used a number of static site generators over the years, but I've heard good things about [Astro](https://astro.build/) and decided to use it for this project. (I've also had good luck with [Eleventy](https://www.11ty.dev/) for my [hobby woodworking site](https://dnhandcrafted.com/)).
 
 I'm not sure how much client side interactivity I'll add to this site, so I'll likely stick to vanilla JS until it makes sense to add something more. I'll be trying to leverage native CSS features as much as possible, so I don't plan on using a post-processor other than the scoping magic that is built into Astro.

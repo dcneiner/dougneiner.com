@@ -15,6 +15,10 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/mdx": "^3.0.1",
     "astro": "^4.9.1",
+    "hast-util-find-and-replace": "^5.0.1",
+    "mdast-util-to-string": "^4.0.0",
+    "reading-time-estimator": "^1.11.0",
+    "rehype-infer-description-meta": "^2.0.0",
     "typescript": "^5.4.5"
   }
 }

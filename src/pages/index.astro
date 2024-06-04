@@ -1,5 +1,12 @@
 ---
+import { getCollection } from "astro:content";
 import MainLayout from "../layouts/MainLayout.astro";
+const allPosts = await getCollection("posts");
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 ---
 
 <MainLayout
@@ -8,8 +15,36 @@ import MainLayout from "../layouts/MainLayout.astro";
 >
   <h1>Welcome</h1>
   <p>
-    I'm Doug, and this is my personal website. I'm in the <a
+    I'm Doug, and this is my personal website. It looks rough because I'm in the <a
       href="/build-in-public">process of building it</a
-    >, and eventually hope to start blogging again about web technologies.
+    >. Feel free to follow along as this site comes together!
   </p>
+  <section>
+    <h2>Recent posts</h2>
+    {
+      allPosts.map(async (post) => {
+        const { remarkPluginFrontmatter } = await post.render();
+        const url = `posts/${post.slug}`;
+
+        return (
+          <article>
+            <header>
+              <h3>
+                <a href={url}>{post.data.title}</a>
+              </h3>
+              <div>
+                <time datetime={post.data.pubDate.toISOString()}>
+                  {dateFormatter.format(post.data.pubDate)}
+                </time>
+              </div>
+            </header>
+            <p>
+              {remarkPluginFrontmatter.excerpt}{" "}
+              <a href={url}>Continue Reading &rarr;</a>
+            </p>
+          </article>
+        );
+      })
+    }
+  </section>
 </MainLayout>

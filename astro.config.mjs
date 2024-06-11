@@ -9,5 +9,10 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: [rehypeExcerptPlugin]
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 1024,
+    },
   }
 });

@@ -28,7 +28,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
   <article>
     <header>
       <h1>{entry.data.title}</h1>
-      <div>
+      <div class="postmeta">
         <time datetime={entry.data.pubDate.toISOString()}>
           {dateFormatter.format(entry.data.pubDate)}
         </time><br />
@@ -38,3 +38,12 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
     <Content />
   </article>
 </Layout>
+
+<style type="text/css">
+  .postmeta {
+    line-height: 1.25rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+  }
+</style>

@@ -1,6 +1,8 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/reset.css";
+import "@fontsource-variable/inter";
 
 interface Props {
   title?: string;
@@ -35,6 +37,19 @@ const description =
 </html>
 
 <style type="text/css" is:global>
+  :root {
+    --text-primary: #222;
+    --text-secondary: #595959;
+    --link: #105698;
+  }
+
+  @font-face {
+    font-family: "Inter-fallback";
+    size-adjust: 107%;
+    ascent-override: 90%;
+    src: local("Arial");
+  }
+
   /* From https://css-tricks.com/inclusively-hidden/ */
   .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
@@ -51,13 +66,50 @@ const description =
   }
 
   body {
-    font-family: Arial, Helvetica, sans-serif;
-    width: min(40rem, 95vw);
+    font-family: "Inter Variable", "Inter-fallback", Arial, Helvetica,
+      sans-serif;
     margin: 0 auto;
+    color: var(--text-primary);
   }
 
-  main img {
-    max-width: 100%;
-    height: auto;
+  @media screen {
+    body {
+      width: min(40rem, 95vw);
+    }
+  }
+
+  main {
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0.65em 0 0.15em 0;
+    }
+    p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      margin: 0.5rem 0 0.75rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  a {
+    color: var(--link);
+  }
+
+  hr {
+    border: none;
+    height: 0;
+    border-top: solid 1px #aaa;
+    margin: 1.5rem 0;
   }
 </style>
